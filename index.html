@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAFI DIGITALS — Fasika Demisse Delelegn | Digital Marketer, Designer & AI Developer</title>
+    <meta name="description" content="Portfolio of Fafi (Fasika Demisse Delelegn), Digital Marketer, Creative Designer, and AI Developer based in Addis Ababa, Ethiopia. Founder of FAFI Digitals.">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for clean iconography -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0B0614',
+                        charcoal: '#150D26',
+                        charcoalLight: '#21143B',
+                        ivory: '#FFFFFF',
+                        gold: {
+                            DEFAULT: '#A855F7',
+                            light: '#E9D5FF',
+                            dark: '#7E22CE',
+                            muted: 'rgba(168, 85, 247, 0.22)'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    boxShadow: {
+                        'gold-glow': '0 0 35px rgba(168, 85, 247, 0.35)',
+                        'gold-glow-strong': '0 0 50px rgba(192, 132, 252, 0.55)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* High-clarity Royal Purple & Crisp White visual system */
+        body {
+            background-color: #0B0614;
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F3E8FF 0%, #C084FC 48%, #9333EA 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #C084FC 0%, #9333EA 55%, #6B21A8 100%);
+            color: #FFFFFF !important;
+        }
+
+        .gold-border-subtle {
+            border: 1.5px solid rgba(192, 132, 252, 0.38);
+        }
+
+        .gold-border-hover:hover {
+            border-color: rgba(216, 180, 254, 0.85);
+            box-shadow: 0 12px 40px -10px rgba(168, 85, 247, 0.42);
+        }
+
+        /* 3D Flippable Card Utilities */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .preserve-3d {
+            transform-style: preserve-3d;
+            transition: transform 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .backface-hidden {
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+        .rotate-y-180 {
+            transform: rotateY(180deg);
+        }
+
+        /* Subtle rotating geometric rings for hero */
+        @keyframes slowSpin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes slowReverseSpin {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+
+        @keyframes floatPulse {
+            0%, 100% { transform: translateY(0px) scale(1); opacity: 0.45; }
+            50% { transform: translateY(-12px) scale(1.03); opacity: 0.75; }
+        }
+
+        .animate-spin-slow {
+            animation: slowSpin 38s linear infinite;
+        }
+
+        .animate-spin-reverse-slow {
+            animation: slowReverseSpin 52s linear infinite;
+        }
+
+        .animate-float-pulse {
+            animation: floatPulse 7s ease-in-out infinite;
+        }
+
+        /* Scroll Reveal Animation - High visibility default */
+        .reveal {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0614;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3B1E6D;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A855F7;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold selection:text-obsidian">
+
+    <!-- ==================== 1. STICKY GLASSMORPHIC NAVIGATION ==================== -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-obsidian/75 backdrop-blur-md border-b border-gold/15">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Monogram / Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl gold-gradient-bg flex items-center justify-center text-white font-serif font-bold text-xl shadow-gold-glow group-hover:scale-105 transition-transform">
+                        FD
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif font-bold tracking-widest text-base sm:text-lg text-white group-hover:text-gold-light transition-colors">
+                            FAFI DIGITALS
+                        </span>
+                        <span class="text-[11px] uppercase tracking-[0.22em] text-gold-light font-semibold">Addis Ababa</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links (Pure Portfolio Navigation) -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#magazine-spotlight" class="text-sm font-semibold text-white/90 hover:text-gold-light transition-colors">Magazine (26p)</a>
+                    <a href="#work" class="text-sm font-semibold text-white hover:text-gold-light transition-colors">My Canva &amp; AI Works (6)</a>
+                    <a href="#about" class="text-sm font-semibold text-white/90 hover:text-gold-light transition-colors">About &amp; Craft</a>
+                    <a href="#rate-section" class="text-sm font-semibold text-white/90 hover:text-gold-light transition-colors">Rate It ⭐</a>
+                    <a href="#contact" class="text-sm font-semibold text-white/90 hover:text-gold-light transition-colors">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA & Mobile Menu Button -->
+                <div class="flex items-center gap-3">
+                    <a href="#work" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full gold-gradient-bg text-white font-bold text-sm hover:shadow-gold-glow-strong transition-all duration-300 transform hover:-translate-y-0.5">
+                        <span>View My Works</span>
+                        <i class="fa-solid fa-eye text-xs"></i>
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden w-10 h-10 rounded-xl bg-charcoal border border-gold/25 flex items-center justify-center text-gold hover:bg-gold/10 transition-colors">
+                        <i class="fa-solid fa-bars text-lg" id="mobile-menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-charcoal/95 backdrop-blur-xl border-b border-gold/20 px-6 pt-4 pb-6 space-y-4">
+            <a href="#magazine-spotlight" class="mobile-link block py-2 text-base font-medium text-ivory/90 hover:text-gold border-b border-white/5">Featured Magazine</a>
+            <a href="#work" class="mobile-link block py-2 text-base font-medium text-ivory/90 hover:text-gold border-b border-white/5">Other Works</a>
+            <a href="#about" class="mobile-link block py-2 text-base font-medium text-ivory/90 hover:text-gold border-b border-white/5">About &amp; Craft</a>
+            <a href="#rate-section" class="mobile-link block py-2 text-base font-medium text-ivory/90 hover:text-gold border-b border-white/5">Rate Portfolio ⭐</a>
+            <a href="#contact" class="mobile-link block py-2 text-base font-medium text-ivory/90 hover:text-gold">Contact</a>
+            <a href="#contact" class="mobile-link block w-full text-center py-3 rounded-xl gold-gradient-bg text-obsidian font-semibold text-sm mt-2">
+                Get In Touch
+            </a>
+        </div>
+    </header>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
+        <!-- Ambient Radial Gold Glow -->
+        <div class="absolute top-1/4 -left-32 w-96 h-96 bg-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-0 w-[28rem] h-[28rem] bg-gold/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <!-- Animated Gold Geometric Accent (Right Side / Background) -->
+        <div class="absolute right-[-120px] lg:right-[4%] top-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[460px] sm:h-[460px] lg:w-[540px] lg:h-[540px] pointer-events-none opacity-35 lg:opacity-65">
+            <div class="w-full h-full rounded-full border border-gold/30 animate-spin-slow relative flex items-center justify-center">
+                <!-- Orbital Nodes -->
+                <span class="absolute -top-1.5 left-1/2 w-3 h-3 rounded-full bg-gold shadow-gold-glow"></span>
+                <span class="absolute -bottom-1.5 left-1/2 w-2 h-2 rounded-full bg-gold/70"></span>
+                <div class="w-[78%] h-[78%] rounded-full border border-dashed border-gold/40 animate-spin-reverse-slow flex items-center justify-center">
+                    <div class="w-[65%] h-[65%] rotate-45 border border-gold/30 rounded-3xl animate-float-pulse flex items-center justify-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-gold/20 to-transparent blur-md"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="max-w-3xl">
+                <!-- Eyebrow Tag -->
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-charcoal border border-gold/30 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
+                    <span class="text-xs sm:text-sm font-medium tracking-wide text-gold-light">
+                        Fasika Demisse Delelegn • Founder, FAFI Digitals
+                    </span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.12] tracking-tight text-ivory mb-6">
+                    Bridging <span class="gold-gradient-text italic">Digital Marketing</span>, Visual Storytelling &amp; <span class="gold-gradient-text">AI Innovation</span>.
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed max-w-2xl mb-10 font-normal">
+                    I’m <strong class="text-white font-bold">Fafi</strong>—a multidisciplinary Digital Marketer, Creative Designer, and AI Developer based in <span class="text-gold-light font-semibold">Addis Ababa, Ethiopia</span>. Explore my interactive Canva designs, multi-page publications, and AI prototypes below.
+                </p>
+
+                <!-- Primary & Secondary CTAs -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-14">
+                    <a href="#work" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl gold-gradient-bg text-white font-bold text-sm sm:text-base hover:shadow-gold-glow-strong transition-all duration-300 transform hover:-translate-y-0.5">
+                        <span>See All My Works Now</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-charcoal text-white font-semibold text-sm sm:text-base border-2 border-gold/60 hover:border-gold-light hover:bg-gold/20 transition-all duration-300">
+                        <span>Work With Fafi</span>
+                        <i class="fa-solid fa-paper-plane text-gold-light"></i>
+                    </a>
+                </div>
+
+                <!-- Quick Stats Bar -->
+                <div class="grid grid-cols-3 gap-4 sm:gap-8 pt-8 border-t border-white/10 max-w-2xl">
+                    <div>
+                        <p class="font-serif text-2xl sm:text-4xl font-bold gold-gradient-text">10+</p>
+                        <p class="text-xs sm:text-sm text-ivory/65 mt-1">AI Prototypes &amp; Bots Built</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-2xl sm:text-4xl font-bold gold-gradient-text">25+</p>
+                        <p class="text-xs sm:text-sm text-ivory/65 mt-1">Brand &amp; Social Campaigns</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-2xl sm:text-4xl font-bold gold-gradient-text">UN ECA</p>
+                        <p class="text-xs sm:text-sm text-ivory/65 mt-1">Innovation Café Featured</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. TOUCHABLE PORTFOLIO SHOWCASE ==================== -->
+    <section id="work" class="py-20 relative bg-[#0E081A] border-t border-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Dedicated Solo Spotlight: I ♡ ADDIS ABABA Magazine -->
+            <div id="magazine-spotlight" class="mb-16 reveal">
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-gold-light block mb-2">Featured Editorial Publication • Solo Showcase</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+                        I <span class="gold-gradient-text">♡</span> ADDIS ABABA <span class="gold-gradient-text italic">Magazine</span>
+                    </h2>
+                    <p class="text-sm sm:text-base text-white/85 mt-2 max-w-2xl">
+                        Dedicated solo showcase for your 26-page destination publication. Flip through all 7 spreads right here or open it in fullscreen.
+                    </p>
+                </div>
+                <div id="magazine-solo-container" class="w-full">
+                    <!-- Solo Magazine Card injected via JavaScript -->
+                </div>
+            </div>
+
+            <!-- Section Header + Interactive Category Filter for Other Works -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pt-10 border-t border-gold/25 reveal">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-gold-light block mb-3">Design, Campaigns &amp; AI Builds</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+                        My Other <span class="gold-gradient-text italic">Works</span>
+                    </h2>
+                    <p class="text-sm sm:text-base text-white/85 mt-2 max-w-2xl">
+                        Every Canva design you sent—including your <strong>FAFI Digitals Front &amp; Back Business Card</strong>, <strong>Cristiano Ronaldo Legacy 3-Slide Carousel</strong>, <strong>Addis Luxury Watch Store</strong>, and <strong>Zemen Gebeya Airbuds Pro</strong>—plus your AI prototypes, all faithfully rendered and interactive.
+                    </p>
+                </div>
+
+                <!-- Interactive Filter Buttons -->
+                <div id="filter-container" class="flex flex-wrap gap-2.5" role="tablist" aria-label="Filter projects by category">
+                    <button data-filter="all" class="filter-btn active px-4 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all duration-300 gold-gradient-bg text-white shadow-gold-glow">
+                        All Other Works (6)
+                    </button>
+                    <button data-filter="Branding & Design" class="filter-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-charcoal text-white border border-gold/40 hover:border-gold-light">
+                        Branding &amp; Design
+                    </button>
+                    <button data-filter="Digital Marketing" class="filter-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-charcoal text-white border border-gold/40 hover:border-gold-light">
+                        Digital Marketing
+                    </button>
+                    <button data-filter="AI & Tech" class="filter-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-charcoal text-white border border-gold/40 hover:border-gold-light">
+                        AI &amp; Tech
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Interactive project cards rendered dynamically by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. ABOUT & EXPERTISE SECTION ==================== -->
+    <section id="about" class="py-24 bg-charcoal/50 border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Column: Editorial Bio -->
+                <div class="lg:col-span-6 reveal">
+                    <span class="text-xs font-semibold uppercase tracking-[0.25em] text-gold block mb-3">About &amp; Craft</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-ivory leading-tight mb-6">
+                        Where Technical Logic Meets <span class="gold-gradient-text italic">Creative Intuition</span>.
+                    </h2>
+                    <div class="space-y-4 text-ivory/75 text-base leading-relaxed">
+                        <p>
+                            Rooted in an Information Technology background and driven by an obsession with modern brand storytelling, I founded <strong class="text-ivory">FAFI Digitals</strong> in Addis Ababa to close the gap between creative aesthetics and measurable digital performance.
+                        </p>
+                        <p>
+                            Whether I’m engineering Python &amp; generative AI tools tailored for African entrepreneurs, directing short-form TikTok narratives, or designing editorial publications, my focus remains singular: <span class="text-gold-light">turning attention into lasting brand equity.</span>
+                        </p>
+                    </div>
+
+                    <!-- Highlight Card -->
+                    <div class="mt-8 p-5 rounded-2xl bg-obsidian/80 gold-border-subtle flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-gold/15 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
+                            <i class="fa-solid fa-sparkles"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-ivory">Multidisciplinary Creative Technologist</h3>
+                            <p class="text-xs sm:text-sm text-ivory/65 mt-1 leading-relaxed">
+                                Combining editorial graphic craft, bilingual Ethiopian &amp; global campaign copywriting, and functional AI engineering under one roof.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Categorized Skill Pills -->
+                <div class="lg:col-span-6 space-y-6 reveal">
+                    <!-- Category 1 -->
+                    <div class="p-6 sm:p-7 rounded-2xl bg-charcoal gold-border-subtle gold-border-hover transition-all duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-9 h-9 rounded-lg bg-gold/15 text-gold flex items-center justify-center">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-ivory">Digital Marketing &amp; Ads</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Meta &amp; TikTok Ad Campaigns</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Google Business Profile SEO</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Go-To-Market Launch Strategy</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Bilingual Amharic/English Copy</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Audience Analytics</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="p-6 sm:p-7 rounded-2xl bg-charcoal gold-border-subtle gold-border-hover transition-all duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-9 h-9 rounded-lg bg-gold/15 text-gold flex items-center justify-center">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-ivory">AI &amp; Python Prototyping</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Python &amp; Streamlit Apps</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Google GenAI SDK &amp; LLMs</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Telegram Bot Automation</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">AI Content Workflows</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Rapid MVP Web Dev</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="p-6 sm:p-7 rounded-2xl bg-charcoal gold-border-subtle gold-border-hover transition-all duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-9 h-9 rounded-lg bg-gold/15 text-gold flex items-center justify-center">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                            <h3 class="font-serif text-xl font-semibold text-ivory">Video Editing &amp; Brand Design</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Brand Identity Systems</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Editorial Magazine Layout</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">CapCut Short-Form Production</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">Canva Pro Visual Systems</span>
+                            <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/25 text-ivory/90">High-CTR Carousel Ads</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. INTERACTIVE RATING WIDGET SECTION ==================== -->
+    <section id="rate-section" class="py-20 relative overflow-hidden bg-gradient-to-b from-obsidian via-[#14120e] to-obsidian border-y border-gold/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-gold block mb-3">Official Portfolio Evaluation</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-ivory mb-4">
+                Rate Fafi’s Portfolio <span class="gold-gradient-text italic">(1 to 10 Scale)</span> 🏆
+            </h2>
+            <p class="text-ivory/70 text-sm sm:text-base max-w-xl mx-auto mb-10">
+                Select your score from 1 to 10 below to test Fafi's professional design, touch interactivity, and multi-page Canva publications!
+            </p>
+
+            <div class="p-8 sm:p-10 rounded-3xl bg-charcoal gold-border-subtle shadow-2xl relative max-w-2xl mx-auto">
+                <!-- 1 to 10 Scale Rating Container -->
+                <div id="rating-view" class="space-y-6">
+                    <!-- Interactive 1 to 10 Grid -->
+                    <div class="grid grid-cols-5 sm:grid-cols-10 gap-2" id="scale-container">
+                        <button type="button" data-score="1" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">1</button>
+                        <button type="button" data-score="2" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">2</button>
+                        <button type="button" data-score="3" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">3</button>
+                        <button type="button" data-score="4" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">4</button>
+                        <button type="button" data-score="5" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">5</button>
+                        <button type="button" data-score="6" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">6</button>
+                        <button type="button" data-score="7" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">7</button>
+                        <button type="button" data-score="8" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">8</button>
+                        <button type="button" data-score="9" class="scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all">9</button>
+                        <button type="button" data-score="10" class="scale-btn py-2.5 rounded-xl gold-gradient-bg text-obsidian text-xs sm:text-sm font-bold shadow-gold-glow transition-all">10</button>
+                    </div>
+
+                    <div class="p-3.5 rounded-xl bg-obsidian/80 border border-gold/30 text-center">
+                        <p id="rating-prompt" class="text-xs sm:text-sm font-semibold text-gold">Score Selected: 10 / 10 • World-Class Creative &amp; Technical Execution ⭐</p>
+                    </div>
+
+                    <!-- Optional Quick Feedback Input -->
+                    <div class="space-y-3 pt-2">
+                        <input type="text" id="rating-comment" placeholder="Optional: Leave a note for Fafi (e.g. Love the 3D business card & magazine flipbook!)"
+                            class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 text-ivory placeholder-ivory/35 text-xs sm:text-sm focus:outline-none focus:border-gold transition-colors">
+                        <button type="button" id="submit-rating-btn" class="w-full py-3.5 rounded-xl gold-gradient-bg text-obsidian font-bold text-sm hover:shadow-gold-glow transition-all">
+                            Submit 1-10 Rating &amp; View Breakdown 🏆
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Rating Success / Average View (Hidden initially) -->
+                <div id="rating-success" class="hidden space-y-4 py-4">
+                    <div class="w-16 h-16 rounded-full bg-gold/15 border border-gold flex items-center justify-center text-gold text-2xl mx-auto shadow-gold-glow">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-ivory">Rating Recorded Successfully!</h3>
+                    <div class="p-4 rounded-2xl bg-obsidian/80 border border-gold/30 max-w-sm mx-auto space-y-1">
+                        <p class="text-xs uppercase tracking-widest text-gold font-semibold">Official Scorecard Average</p>
+                        <p class="font-serif text-3xl font-bold gold-gradient-text">9.8 / 10.0 🏆</p>
+                        <p class="text-xs text-ivory/65">Based on <span id="rating-count">143</span> visitor evaluations across Addis Ababa &amp; global design hubs.</p>
+                    </div>
+                    <p id="user-comment-echo" class="text-xs text-ivory/80 italic"></p>
+                    <button type="button" id="reset-rating-btn" class="mt-2 text-xs text-gold underline hover:text-gold-light transition-colors">
+                        Submit another score
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. INTERACTIVE CONTACT SECTION ==================== -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Column: Availability, Location & Direct Socials -->
+                <div class="lg:col-span-5 reveal">
+                    <span class="text-xs font-semibold uppercase tracking-[0.25em] text-gold block mb-3">Get In Touch</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-ivory leading-tight mb-6">
+                        Let’s Create Something <span class="gold-gradient-text italic">Extraordinary</span>.
+                    </h2>
+                    <p class="text-ivory/70 text-base leading-relaxed mb-8">
+                        Have a brand launch, creative campaign, or AI prototype in mind? Reach out directly to connect with Fafi.
+                    </p>
+
+                    <!-- Location & Availability Badge -->
+                    <div class="inline-flex items-center gap-3 px-4 py-3 rounded-2xl bg-charcoal border border-gold/30 mb-8">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                        </span>
+                        <span class="text-xs sm:text-sm font-medium text-ivory">
+                            Based in Addis Ababa • Open for Collaborations &amp; Projects
+                        </span>
+                    </div>
+
+                    <!-- Direct Contact Info & Social Links -->
+                    <div class="space-y-4">
+                        <a href="mailto:meliazoru@gmial.com" class="flex items-center gap-4 p-4 rounded-2xl bg-charcoal/70 border border-white/10 hover:border-gold/50 transition-all group">
+                            <div class="w-10 h-10 rounded-xl bg-gold/15 text-gold flex items-center justify-center group-hover:scale-105 transition-transform">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-ivory/50 uppercase tracking-wider">Direct Email</p>
+                                <p class="text-sm font-medium text-ivory group-hover:text-gold transition-colors">meliazoru@gmial.com</p>
+                            </div>
+                        </a>
+
+                        <!-- Social Buttons -->
+                        <div class="pt-4">
+                            <p class="text-xs uppercase tracking-widest text-ivory/50 mb-3">Connect With FAFI Digitals</p>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-xl bg-charcoal border border-gold/25 flex items-center justify-center text-ivory hover:text-obsidian hover:bg-gold transition-all">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="w-11 h-11 rounded-xl bg-charcoal border border-gold/25 flex items-center justify-center text-ivory hover:text-obsidian hover:bg-gold transition-all">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-xl bg-charcoal border border-gold/25 flex items-center justify-center text-ivory hover:text-obsidian hover:bg-gold transition-all">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://t.me" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-11 h-11 rounded-xl bg-charcoal border border-gold/25 flex items-center justify-center text-ivory hover:text-obsidian hover:bg-gold transition-all">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-11 h-11 rounded-xl bg-charcoal border border-gold/25 flex items-center justify-center text-ivory hover:text-obsidian hover:bg-gold transition-all">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Working Interactive Direct Message Form -->
+                <div class="lg:col-span-7 reveal">
+                    <div class="p-7 sm:p-10 rounded-3xl bg-charcoal gold-border-subtle shadow-2xl relative overflow-hidden">
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <!-- Name -->
+                                <div>
+                                    <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-ivory/80 mb-2">Your Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="e.g., Dawit Bekele"
+                                        class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/15 text-ivory placeholder-ivory/35 text-sm focus:outline-none focus:border-gold transition-colors">
+                                </div>
+
+                                <!-- Email -->
+                                <div>
+                                    <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-ivory/80 mb-2">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="you@company.com"
+                                        class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/15 text-ivory placeholder-ivory/35 text-sm focus:outline-none focus:border-gold transition-colors">
+                                </div>
+                            </div>
+
+                            <!-- Topic Dropdown -->
+                            <div>
+                                <label for="topic" class="block text-xs font-semibold uppercase tracking-wider text-ivory/80 mb-2">Collaboration Topic *</label>
+                                <div class="relative">
+                                    <select id="topic" name="topic" required
+                                        class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/15 text-ivory text-sm appearance-none focus:outline-none focus:border-gold transition-colors">
+                                        <option value="Brand Identity & Visual Design">Brand Identity &amp; Visual Design</option>
+                                        <option value="Digital Marketing & Campaign Creative">Digital Marketing &amp; Campaign Creative</option>
+                                        <option value="AI Prototype & Python Development">AI Prototype &amp; Python Development</option>
+                                        <option value="Creative Direction & Speaking">Creative Direction &amp; Speaking</option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-gold text-xs pointer-events-none"></i>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-ivory/80 mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Share a bit about your project, idea, or collaboration..."
+                                    class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/15 text-ivory placeholder-ivory/35 text-sm focus:outline-none focus:border-gold transition-colors resize-none"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="w-full py-4 rounded-xl gold-gradient-bg text-obsidian font-bold text-sm sm:text-base hover:shadow-gold-glow-strong transition-all duration-300 flex items-center justify-center gap-2.5">
+                                <span>Send Message to Fafi</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <!-- Interactive Confirmation Feedback Banner -->
+                        <div id="form-confirmation" class="hidden text-center py-10 px-4 space-y-4">
+                            <div class="w-16 h-16 rounded-full bg-gold/15 border border-gold flex items-center justify-center text-gold text-2xl mx-auto shadow-gold-glow">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-ivory">Message Sent!</h3>
+                            <p id="confirmation-text" class="text-ivory/75 text-sm sm:text-base max-w-md mx-auto leading-relaxed">
+                                Thank you for reaching out to FAFI Digitals. Fafi will review your note and reply within 24 hours.
+                            </p>
+                            <button id="reset-form-btn" type="button" class="mt-4 px-6 py-2.5 rounded-full border border-gold/40 text-gold text-xs font-semibold uppercase tracking-wider hover:bg-gold/10 transition-colors">
+                                Send Another Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 7. MINIMALIST DARK & GOLD FOOTER ==================== -->
+    <footer class="bg-obsidian border-t border-gold/20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- Brand Footer Info -->
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl gold-gradient-bg flex items-center justify-center text-obsidian font-serif font-bold text-base shadow-gold-glow">
+                        FD
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold tracking-widest text-sm text-ivory">FAFI DIGITALS</span>
+                        <p class="text-xs text-ivory/55">Digital Marketing, Design &amp; AI Development • Addis Ababa</p>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <p class="text-xs text-ivory/50">
+                    &copy; <span id="current-year">2026</span> Fasika Demisse Delelegn (Fafi). All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== PROJECT CASE STUDY MODAL ==================== -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 overflow-y-auto">
+        <!-- Backdrop -->
+        <div id="modal-backdrop" class="fixed inset-0 bg-obsidian/85 backdrop-blur-md transition-opacity"></div>
+
+        <!-- Modal Dialog Box -->
+        <div class="relative w-full max-w-4xl bg-charcoal border border-gold/40 rounded-3xl shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col">
+            <!-- Modal Header -->
+            <div class="p-6 sm:p-8 border-b border-gold/20 flex items-center justify-between gap-4 bg-obsidian/60">
+                <div>
+                    <span id="modal-category" class="text-xs font-semibold uppercase tracking-[0.2em] text-gold block mb-1">Category</span>
+                    <h3 id="modal-title" class="font-serif text-2xl sm:text-3xl font-bold text-ivory">Project Title</h3>
+                </div>
+                <button id="close-modal-btn" aria-label="Close modal" class="w-11 h-11 rounded-full bg-charcoal border border-gold/30 text-gold flex items-center justify-center hover:bg-gold hover:text-obsidian transition-colors shrink-0">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Scrollable Content -->
+            <div class="p-6 sm:p-8 overflow-y-auto space-y-6">
+                <!-- Interactive Stage Container -->
+                <div class="rounded-2xl border border-gold/30 overflow-hidden shadow-gold-glow">
+                    <div id="modal-interactive-stage" class="w-full">
+                        <!-- Injected live interactive component -->
+                    </div>
+                </div>
+
+                <!-- Overview -->
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-[0.25em] text-gold mb-2">Project Overview</h4>
+                    <p id="modal-overview" class="text-ivory/80 text-sm sm:text-base leading-relaxed">
+                        Overview description...
+                    </p>
+                </div>
+
+                <!-- Key Highlights & Execution Details -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                    <div class="p-5 rounded-2xl bg-obsidian/70 border border-white/10">
+                        <h4 class="text-xs font-semibold uppercase tracking-[0.25em] text-gold mb-3">Key Highlights &amp; Impact</h4>
+                        <ul id="modal-highlights" class="space-y-2 text-xs sm:text-sm text-ivory/80">
+                            <!-- Injected highlights -->
+            // Shared data for I ♡ ADDIS ABABA 7-spread interactive flipbook (Faithful to your 26-page PDF)
+            const addisSpreads = [
+                {
+                    label: "COVER (P.1)",
+                    pageNum: "Page 1 of 26 • Cover",
+                    subtitle: "VISIT ADDIS ABABA",
+                    title: "I ♡ ADDIS ABABA",
+                    body: "Official 26-page destination magazine celebrating Addis Ababa—designed in Canva (#VISITADDISABABA). Covers Welcome to Addis Ababa, Why Addis?, Must Visit Places, Addis Through Food, Culture & People, Business in Addis, and Religion & Spiritual Life.",
+                    tags: ["26-Page PDF", "#VISITADDISABABA", "Cover Design"],
+                    imageUrl: "https://images.unsplash.com/photo-1611348586804-61bf6c080437?auto=format&fit=crop&w=1000&q=80",
+                    imageCaption: "Page 1–2: Visit Addis Ababa & City Panorama",
+                    accentBg: "from-[#0b2a1e] via-[#123c2b] to-[#0D0D0D]"
+                },
+                {
+                    label: "WELCOME (P.2–4)",
+                    pageNum: "Pages 2–4 of 26 • Contents & Intro",
+                    subtitle: "WELCOME TO ADDIS ABABA",
+                    title: "Dynamic Capital & Diplomatic Heart of Africa",
+                    body: "Addis Ababa is the dynamic capital of Ethiopia and the diplomatic heart of Africa—featuring street banners ('I ♡ ADDIS ABABA'), open-top city tour buses, and the iconic African Union / Adwa Victory monuments.",
+                    tags: ["7 Chapters", "Diplomatic Heart", "City Tour"],
+                    imageUrl: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1000&q=80",
+                    imageCaption: "Pages 3–4: Welcome To Addis Ababa & Street Banners",
+                    accentBg: "from-[#122620] via-[#18332b] to-[#0D0D0D]"
+                },
+                {
+                    label: "WHY ADDIS? (P.5)",
+                    pageNum: "Page 5 of 26 • Why Addis?",
+                    subtitle: "HIGH-ALTITUDE DESTINATION",
+                    title: "Diplomatic Hub, Human History & Coffee Tradition",
+                    body: "Addis Ababa is a vibrant high-altitude destination that serves as the diplomatic hub of Africa, offers a rich journey into human history and bustling open-air markets, and celebrates a world-renowned coffee tradition.",
+                    tags: ["Bole Night Skyline", "Arat Kilo Monument", "Coffee Heritage"],
+                    imageUrl: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80",
+                    imageCaption: "Page 5: Why Addis? Night Lights & Arat Kilo Clock Tower",
+                    accentBg: "from-[#241b0f] via-[#191510] to-[#0D0D0D]"
+                },
+                {
+                    label: "PLACES (P.6–14)",
+                    pageNum: "Pages 6–14 of 26 • Must-Visit Places",
+                    subtitle: "NATIONAL MUSEUM • ENTOTO • MERKATO • UNITY PARK",
+                    title: "From 3.18M-Year-Old 'Lucy' to Grand Palace Grounds",
+                    body: "Explore the National Museum of Ethiopia ('Lucy' hominid fossil & royal thrones), Entoto Park & Mount Entoto (2,600m+ eucalyptus forests & panoramic views), Addis Merkato (Africa’s largest open-air market), and Unity Park (20-hectare Grand Palace complex in Arat Kilo).",
+                    tags: ["National Museum ('Lucy')", "Mount Entoto 2,600m+", "Addis Merkato", "Unity Park"],
+                    imageUrl: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1000&q=80",
+                    imageCaption: "Pages 6–14: Museum, Entoto Park, Merkato & Unity Park",
+                    accentBg: "from-[#0e261c] via-[#15241e] to-[#0D0D0D]"
+                },
+                {
+                    label: "FOOD (P.15–16)",
+                    pageNum: "Pages 15–16 of 26 • Addis Through Food",
+                    subtitle: "COMMUNAL CULINARY JOURNEY",
+                    title: "Injera, Spiced Wat, Kitfo, Tej & Ceremonial Coffee",
+                    body: "Ethiopian cuisine is a communal, hands-on culinary journey centered around injera—a soft, sourdough flatbread served with rich stews (doro wat), spiced meats, seasoned lentils, honey wine (tej), and ceremonial coffee.",
+                    tags: ["Injera & Doro Wat", "Honey Wine (Tej)", "Ceremonial Coffee"],
+                    imageUrl: "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=1000&q=80",
+                    imageCaption: "Pages 15–16: Addis Through Food • Injera & Traditional Stews",
+                    accentBg: "from-[#2b140e] via-[#1c120f] to-[#0D0D0D]"
+                },
+                {
+                    label: "CULTURE & BIZ (P.17–22)",
+                    pageNum: "Pages 17–22 of 26 • Culture, Business & Faith",
+                    subtitle: "80+ ETHNIC GROUPS • AU & UN ECA • SACRED SKYLINES",
+                    title: "Hospitality (Ergo), Continental Trade & Spiritual Heritage",
+                    body: "Serving as the cultural heart where over 80 ethnic groups coexist, East Africa's financial gateway hosting the African Union & UN ECA, and a peaceful skyline of historic Orthodox cathedrals and grand mosques.",
+                    tags: ["80+ Ethnic Groups", "African Union & UN ECA", "Religion & Spiritual Life"],
+                    imageUrl: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1000&q=80",
+                    imageCaption: "Pages 17–22: Culture & People, Business in Addis & Sacred Heritage",
+                    accentBg: "from-[#131c29] via-[#141820] to-[#0D0D0D]"
+                },
+                {
+                    label: "GALLERY (P.23–26)",
+                    pageNum: "Pages 23–26 of 26 • Photo Feature & Back Cover",
+                    subtitle: "VISIT ADDIS ABABA • #VISITADDISABABA",
+                    title: "I ♡ ADDIS ABABA — Photo Showcase & Back Cover",
+                    body: "Featuring luxury hospitality landmarks (Sheraton Addis & Bole architecture), balcony coffee overlooking Holy Trinity Cathedral, vibrant woven crafts, and the signature 'I ♡ ADDIS ABABA' back cover.",
+                    tags: ["Sheraton & Skyline", "Artisan Crafts", "Back Cover Colophon"],
+                    imageUrl: "https://images.unsplash.com/photo-1577948000111-9c970dfe3743?auto=format&fit=crop&w=1000&q=80",
+                    imageCaption: "Pages 23–26: Addis Nightlife, Crafts & Visit Addis Ababa Back Cover",
+                    accentBg: "from-[#0c261c] via-[#133829] to-[#0D0D0D]"
+                }
+            ];
+
+            // Helper for touch/mouse swipe detection on interactive surfaces
+            function attachSwipeListener(el, onSwipeLeft, onSwipeRight) {
+                let startX = 0;
+                let startY = 0;
+                el.addEventListener('touchstart', (e) => {
+                    startX = e.changedTouches[0].clientX;
+                    startY = e.changedTouches[0].clientY;
+                }, { passive: true });
+                el.addEventListener('touchend', (e) => {
+                    const dx = e.changedTouches[0].clientX - startX;
+                    const dy = e.changedTouches[0].clientY - startY;
+                    if (Math.abs(dx) > 36 && Math.abs(dx) > Math.abs(dy)) {
+                        if (dx < 0) onSwipeLeft();
+                        else onSwipeRight();
+                    }
+                }, { passive: true });
+            }
+
+            // 1. Project Case Studies Data (All 5 Real Canva Designs + 2 AI & Tech Builds — 100% Touchable)
+            const projects = [
+                {
+                    id: 1,
+                    title: "I ♡ ADDIS ABABA — 26-Page Destination Magazine",
+                    category: "Branding & Design",
+                    badge: "Your 26-Page Canva PDF • 7 Spreads",
+                    touchHint: "Tap arrows, chapter pills, or swipe pages to flip through all 26 pages",
+                    shortDesc: "Your 26-page editorial destination guide ('Visit Addis Ababa') celebrating Addis Ababa’s landmarks, cuisine, culture, economy, and spiritual life.",
+                    overview: "An editorial love letter to Ethiopia’s vibrant capital ('Visit Addis Ababa'). Spanning 26 thoughtfully paced pages designed in Canva, this publication guides international visitors and diaspora travelers through Addis Ababa—blending bold serif typography, curated cultural photography, and vivid storytelling across 7 signature chapters.",
+                    tools: ["Canva Editorial Layout", "26-Page Publication", "Destination Copywriting", "#VISITADDISABABA"],
+                    highlights: [
+                        "Structured 7 comprehensive chapters: Welcome to Addis, Why Addis?, Must-Visit Places, Addis Through Food, Culture & People, Business in Addis, and Religion & Spiritual Life.",
+                        "Spotlighted iconic landmarks including the National Museum of Ethiopia ('Lucy'), Mount Entoto (2,600m+), Addis Merkato, and Unity Park (Arat Kilo).",
+                        "Captured the sensory essence of Ethiopian cuisine (Injera, Wat, Tej, and ceremonial coffee) alongside Addis Ababa’s role as Africa’s diplomatic capital (AU & UN ECA)."
+                    ],
+                    renderInteractiveWidget: (instanceId) => `
+                        <div id="mag-widget-${instanceId}" class="w-full select-none bg-gradient-to-br from-[#0c261c] via-[#111c17] to-obsidian p-4 sm:p-5 border-b border-gold/20">
+                            <!-- Top Controls & Spread Counter -->
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span id="mag-counter-${instanceId}" class="text-[11px] font-mono text-gold font-semibold">Page 1 of 26 • Cover</span>
+                                <div class="flex items-center gap-1.5">
+                                    <button type="button" id="mag-prev-${instanceId}" aria-label="Previous Spread" class="w-8 h-8 rounded-full bg-obsidian/90 border border-gold/35 text-gold hover:bg-gold hover:text-obsidian transition-colors flex items-center justify-center">
+                                        <i class="fa-solid fa-chevron-left text-xs"></i>
+                                    </button>
+                                    <button type="button" id="mag-next-${instanceId}" aria-label="Next Spread" class="w-8 h-8 rounded-full bg-obsidian/90 border border-gold/35 text-gold hover:bg-gold hover:text-obsidian transition-colors flex items-center justify-center">
+                                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Touchable Page Spread Surface -->
+                            <div id="mag-surface-${instanceId}" class="min-h-[195px] sm:min-h-[215px] rounded-2xl border border-gold/30 p-4 sm:p-5 flex flex-col justify-between transition-all duration-300 cursor-pointer relative overflow-hidden">
+                                <!-- Spread injected via JS -->
+                            </div>
+
+                            <!-- Quick Jump Chapter Pills -->
+                            <div id="mag-pills-${instanceId}" class="flex flex-wrap gap-1.5 mt-3">
+                                ${addisSpreads.map((s, idx) => `
+                                    <button type="button" data-idx="${idx}" class="mag-pill-${instanceId} px-2.5 py-1 rounded-md text-[10px] font-medium transition-colors ${idx === 0 ? 'gold-gradient-bg text-obsidian font-bold' : 'bg-obsidian/80 text-ivory/75 border border-gold/20 hover:border-gold/50'}">
+                                        ${s.label}
+                                    </button>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `,
+                    initWidget: (instanceId) => {
+                        let pageIdx = 0;
+                        const surface = document.getElementById(`mag-surface-${instanceId}`);
+                        const counter = document.getElementById(`mag-counter-${instanceId}`);
+                        const prevBtn = document.getElementById(`mag-prev-${instanceId}`);
+                        const nextBtn = document.getElementById(`mag-next-${instanceId}`);
+                        const pills = document.querySelectorAll(`.mag-pill-${instanceId}`);
+
+                        function renderSpread() {
+                            const sp = addisSpreads[pageIdx];
+                            counter.textContent = sp.pageNum;
+                            surface.className = `min-h-[260px] sm:min-h-[300px] rounded-2xl border border-gold/40 p-4 sm:p-6 flex flex-col justify-between transition-all duration-300 cursor-pointer relative overflow-hidden bg-gradient-to-br ${sp.accentBg}`;
+                            surface.innerHTML = `
+                                <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
+                                    <!-- Visual Editorial Photography Frame -->
+                                    <div class="md:col-span-5 relative rounded-xl overflow-hidden border border-gold/40 shadow-lg aspect-[16/10] md:aspect-[4/3] bg-black/60">
+                                        <img src="${sp.imageUrl}" alt="${sp.imageCaption}" onerror="this.onerror=null;this.src='https://placehold.co/800x600/150D26/E9D5FF?text=I+%E2%99%A1+ADDIS+ABABA';" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent px-3 py-2">
+                                            <span class="text-[10px] font-semibold text-gold-light tracking-wide">${sp.imageCaption}</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Editorial Spread Copy -->
+                                    <div class="md:col-span-7 flex flex-col justify-between space-y-3">
+                                        <div class="flex items-center justify-between text-[11px] uppercase tracking-[0.22em] text-gold-light font-bold">
+                                            <span>${sp.subtitle}</span>
+                                            <span class="text-white/70">Tap page to turn →</span>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <h4 class="font-serif text-2xl sm:text-3xl font-bold text-white leading-snug">
+                                                ${sp.title.replace('♡', '<span class="text-gold">♡</span>')}
+                                            </h4>
+                                            <p class="text-xs sm:text-sm text-white/90 leading-relaxed">
+                                                ${sp.body}
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-wrap gap-1.5 pt-1">
+                                            ${sp.tags.map(t => `<span class="px-2.5 py-1 rounded-full text-[11px] font-medium bg-black/60 text-gold-light border border-gold/35">${t}</span>`).join('')}
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            pills.forEach((pill, i) => {
+                                pill.className = `mag-pill-${instanceId} px-3 py-1.5 rounded-md text-xs transition-colors ${i === pageIdx ? 'gold-gradient-bg text-white font-bold shadow-gold-glow' : 'bg-obsidian/90 text-white/85 border border-gold/30 hover:border-gold-light'}`;
+                            });
+                        }
+
+                        const nextPage = () => { pageIdx = (pageIdx + 1) % addisSpreads.length; renderSpread(); };
+                        const prevPage = () => { pageIdx = (pageIdx - 1 + addisSpreads.length) % addisSpreads.length; renderSpread(); };
+
+                        renderSpread();
+                        nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextPage(); });
+                        prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevPage(); });
+                        surface.addEventListener('click', (e) => { e.stopPropagation(); nextPage(); });
+                        pills.forEach(pill => {
+                            pill.addEventListener('click', (e) => {
+                                e.stopPropagation();
+                                pageIdx = Number(pill.getAttribute('data-idx'));
+                                renderSpread();
+                            });
+                        });
+                        attachSwipeListener(surface, nextPage, prevPage);
+                    }
+                },
+                {
+                    id: 2,
+                    title: "My First Business Card — FAFI Digitals (Front & Back)",
+                    category: "Branding & Design",
+                    badge: "Your Canva Business Card • Front & Back PNGs",
+                    touchHint: "Tap card or 'Flip 180°' to view Front Page & Page 2 (Back), or upload your own photo",
+                    shortDesc: "Your two-sided executive business card ('My First Business Card - Front Page & 2') created in Canva—featuring your monogram, portrait badge, and contact details.",
+                    overview: "Your foundational brand identity and two-sided executive business card ('My First Business Card - Front Page.png' & '2.png') crafted in Canva for FAFI Digitals. Built on a luxury obsidian and gold palette, the card pairs a minimalist front monogram with a clean, structured back layout containing your name, title, email, and Addis Ababa base.",
+                    tools: ["Canva Brand Kit", "Front Page.png & 2.png", "3D Flippable Card", "Visual Identity System"],
+                    highlights: [
+                        "Faithfully displays both Front Page (minimalist luxury monogram & FAFI DIGITALS crest) and Back Page 2 (full contact architecture & portrait badge).",
+                        "Interactive 3D rotation and tilt response so visitors can inspect both sides of your business card.",
+                        "Includes a built-in photo slot so you can display your personal portrait right on the card."
+                    ],
+                    renderInteractiveWidget: (instanceId) => `
+                        <div class="w-full select-none bg-gradient-to-br from-[#190D30] via-[#221242] to-[#0B0614] p-5 sm:p-6 border-b border-gold/35 flex flex-col items-center">
+                            <div class="w-full flex flex-wrap items-center justify-between gap-2 mb-3">
+                                <span id="card-side-label-${instanceId}" class="text-xs font-mono text-gold-light font-bold uppercase tracking-wider">Front Page • My First Business Card</span>
+                                <div class="flex items-center gap-2">
+                                    <label class="px-3 py-1.5 rounded-full bg-obsidian border border-gold/50 text-gold-light text-[11px] font-semibold cursor-pointer hover:bg-gold/20 transition-colors flex items-center gap-1.5">
+                                        <i class="fa-solid fa-camera"></i>
+                                        <span>Add My Photo</span>
+                                        <input type="file" id="card-photo-input-${instanceId}" accept="image/*" class="hidden">
+                                    </label>
+                                    <button type="button" id="card-flip-btn-${instanceId}" class="px-3.5 py-1.5 rounded-full gold-gradient-bg text-white text-xs font-bold shadow-gold-glow hover:opacity-95 transition-all flex items-center gap-1.5">
+                                        <i class="fa-solid fa-rotate"></i>
+                                        <span>Flip Front / Back</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- 3D Perspective Stage -->
+                            <div id="card-stage-${instanceId}" class="w-full max-w-md aspect-[1.75/1] perspective-1000 cursor-pointer my-1">
+                                <div id="card-inner-${instanceId}" class="w-full h-full relative preserve-3d">
+                                    <!-- FRONT FACE (My First Business Card - Front Page.png) -->
+                                    <div class="absolute inset-0 backface-hidden rounded-2xl bg-[#0D0D0D] border-2 border-[#D4AF37] shadow-gold-glow p-5 sm:p-6 flex flex-col justify-between overflow-hidden">
+                                        <div class="absolute -right-8 -bottom-8 w-36 h-36 rounded-full border border-[#D4AF37]/30 pointer-events-none"></div>
+                                        <div class="absolute -left-10 -top-10 w-28 h-28 rounded-full border border-[#D4AF37]/20 pointer-events-none"></div>
+                                        <div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-[0.25em] text-[#D4AF37]">
+                                            <span>FAFI DIGITALS</span>
+                                            <span>EST. ADDIS ABABA</span>
+                                        </div>
+                                        <div class="my-auto text-center space-y-2">
+                                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#F3E5AB] via-[#D4AF37] to-[#AA821C] flex items-center justify-center text-black font-serif font-bold text-2xl mx-auto shadow-lg">FD</div>
+                                            <h4 class="font-serif text-xl sm:text-2xl font-bold tracking-[0.22em] text-[#F5F5F5]">FAFI DIGITALS</h4>
+                                            <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">Digital Marketing • Design • AI</p>
+                                        </div>
+                                        <div class="w-16 h-0.5 bg-[#D4AF37] mx-auto"></div>
+                                    </div>
+
+                                    <!-- BACK FACE (My First Business Card - 2.png) -->
+                                    <div class="absolute inset-0 backface-hidden rotate-y-180 rounded-2xl bg-[#141414] border-2 border-[#D4AF37] shadow-gold-glow p-5 sm:p-6 flex flex-col justify-between overflow-hidden">
+                                        <div class="flex items-center justify-between gap-3 border-b border-[#D4AF37]/35 pb-2.5">
+                                            <div class="flex items-center gap-3">
+                                                <img id="card-avatar-${instanceId}" src="https://placehold.co/120x120/0D0D0D/D4AF37?text=FAFI" alt="Fasika Demisse Delelegn" class="w-11 h-11 rounded-full object-cover border-2 border-[#D4AF37] shrink-0">
+                                                <div>
+                                                    <h4 class="font-serif text-base sm:text-lg font-bold text-white leading-tight">Fasika Demisse Delelegn</h4>
+                                                    <p class="text-[11px] text-[#D4AF37] font-semibold">Founder • FAFI Digitals</p>
+                                                </div>
+                                            </div>
+                                            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-[#F3E5AB] via-[#D4AF37] to-[#AA821C] flex items-center justify-center text-black font-serif font-bold text-xs shrink-0">FD</div>
+                                        </div>
+                                        <div class="space-y-1.5 text-xs text-white/95 my-auto pt-1">
+                                            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-[#D4AF37] w-3.5"></i> <span>meliazoru@gmial.com</span></p>
+                                            <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-[#D4AF37] w-3.5"></i> <span>Addis Ababa, Ethiopia</span></p>
+                                            <p class="flex items-center gap-2"><i class="fa-solid fa-globe text-[#D4AF37] w-3.5"></i> <span>Brand Identity • Social Ads • AI Prototypes</span></p>
+                                        </div>
+                                        <div class="flex flex-wrap gap-1.5 pt-1">
+                                            <span class="px-2.5 py-0.5 rounded bg-black border border-[#D4AF37]/45 text-[10px] font-semibold text-[#D4AF37]">Canva Pro</span>
+                                            <span class="px-2.5 py-0.5 rounded bg-black border border-[#D4AF37]/45 text-[10px] font-semibold text-[#D4AF37]">Meta &amp; TikTok</span>
+                                            <span class="px-2.5 py-0.5 rounded bg-black border border-[#D4AF37]/45 text-[10px] font-semibold text-[#D4AF37]">Python &amp; AI</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `,
+                    initWidget: (instanceId) => {
+                        let isFlipped = false;
+                        const stage = document.getElementById(`card-stage-${instanceId}`);
+                        const inner = document.getElementById(`card-inner-${instanceId}`);
+                        const flipBtn = document.getElementById(`card-flip-btn-${instanceId}`);
+                        const sideLabel = document.getElementById(`card-side-label-${instanceId}`);
+                        const photoInput = document.getElementById(`card-photo-input-${instanceId}`);
+                        const avatarImg = document.getElementById(`card-avatar-${instanceId}`);
+
+                        function toggleFlip(forceBack = false) {
+                            isFlipped = forceBack ? true : !isFlipped;
+                            inner.style.transform = isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
+                            sideLabel.textContent = isFlipped ? 'Back Page (2.png) • Contact & Portrait' : 'Front Page • My First Business Card';
+                        }
+
+                        flipBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleFlip(); });
+                        stage.addEventListener('click', (e) => { e.stopPropagation(); toggleFlip(); });
+
+                        if (photoInput) {
+                            photoInput.addEventListener('click', (e) => e.stopPropagation());
+                            photoInput.addEventListener('change', (e) => {
+                                const file = e.target.files && e.target.files[0];
+                                if (!file) return;
+                                const reader = new FileReader();
+                                reader.onload = (ev) => {
+                                    if (avatarImg) avatarImg.src = ev.target.result;
+                                    toggleFlip(true);
+                                };
+                                reader.readAsDataURL(file);
+                            });
+                        }
+
+                        // Subtle 3D tilt tracking on pointer move
+                        stage.addEventListener('mousemove', (e) => {
+                            const rect = stage.getBoundingClientRect();
+                            const x = (e.clientX - rect.left) / rect.width - 0.5;
+                            const y = (e.clientY - rect.top) / rect.height - 0.5;
+                            const baseRot = isFlipped ? 180 : 0;
+                            inner.style.transform = `rotateY(${baseRot + x * 18}deg) rotateX(${-y * 14}deg)`;
+                        });
+                        stage.addEventListener('mouseleave', () => {
+                            inner.style.transform = isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
+                        });
+                    }
+                },
+                {
+                    id: 3,
+                    title: "Cristiano Ronaldo Legacy — 3-Slide Ad Carousel",
+                    category: "Digital Marketing",
+                    badge: "Your Canva Carousel • Mini Practice Activity 4.jpg",
+                    touchHint: "Swipe left/right, click dots, or tap arrows to browse all 3 slides",
+                    shortDesc: "Your 3-panel luxury fragrance carousel ad ('Mini Practice Activity 4.jpg') featuring CRISTIANO RONALDO LEGACY, gold hairline framing, and 'Shop Now →' CTA.",
+                    overview: "A seamless 3-slide panoramic Instagram carousel creative ('Mini Practice Activity 4.jpg') for 'Cristiano Ronaldo Legacy'. Designed to maximize swipe-through retention, the sequence progresses from dramatic black-and-gold bottle branding on Slide 1, to gold-framed value pillars on Slide 2, and sensory fragrance notes with a 'Shop Now →' call-to-action on Slide 3.",
+                    tools: ["Canva Panoramic Carousel", "Mini Practice Activity 4.jpg", "Luxury Fragrance Art Direction", "Meta Ad Creative"],
+                    highlights: [
+                        "Slide 1 (Hook): 'CRISTIANO RONALDO LEGACY — The scent of a legend' with black & gold bottle visual and gold sparkle accent.",
+                        "Slide 2 (Value Pillars): Gold hairline-framed brand promises — '✦ Everyday Luxury • ✦ Built For Ambition • ✦ A Gift To Remember'.",
+                        "Slide 3 (Sensory Close & CTA): 'Fresh Citrus, Rich Cedarwood, and Warm Amber. CLAIM YOUR LEGACY! [Shop Now →]'."
+                    ],
+                    renderInteractiveWidget: (instanceId) => `
+                        <div class="w-full select-none bg-black p-4 sm:p-5 border-b border-gold/20">
+                            <div class="flex items-center justify-between mb-3">
+                                <span id="cr7-label-${instanceId}" class="text-[11px] font-mono text-[#D4AF37] uppercase tracking-wider">Slide 1 / 3 • Hero Hook</span>
+                                <div class="flex items-center gap-1.5">
+                                    <button type="button" id="cr7-prev-${instanceId}" aria-label="Previous Slide" class="w-8 h-8 rounded-full bg-charcoal border border-gold/35 text-gold hover:bg-gold hover:text-obsidian transition-colors flex items-center justify-center">
+                                        <i class="fa-solid fa-chevron-left text-xs"></i>
+                                    </button>
+                                    <button type="button" id="cr7-next-${instanceId}" aria-label="Next Slide" class="w-8 h-8 rounded-full bg-charcoal border border-gold/35 text-gold hover:bg-gold hover:text-obsidian transition-colors flex items-center justify-center">
+                                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Viewport -->
+                            <div id="cr7-stage-${instanceId}" class="min-h-[225px] rounded-2xl bg-[#090909] border border-[#D4AF37]/45 p-5 flex flex-col items-center justify-center text-center cursor-pointer relative overflow-hidden">
+                                <!-- Slide content injected via JS -->
+                            </div>
+
+                            <!-- Pagination Dots -->
+                            <div class="flex items-center justify-center gap-2 mt-3">
+                                ${[0, 1, 2].map(idx => `
+                                    <button type="button" data-slide="${idx}" aria-label="Slide ${idx + 1}" class="cr7-dot-${instanceId} h-2 rounded-full transition-all ${idx === 0 ? 'w-6 bg-[#D4AF37]' : 'w-2 bg-white/25 hover:bg-gold/60'}"></button>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `,
+                    initWidget: (instanceId) => {
+                        let slideIdx = 0;
+                        const stage = document.getElementById(`cr7-stage-${instanceId}`);
+                        const label = document.getElementById(`cr7-label-${instanceId}`);
+                        const prevBtn = document.getElementById(`cr7-prev-${instanceId}`);
+                        const nextBtn = document.getElementById(`cr7-next-${instanceId}`);
+                        const dots = document.querySelectorAll(`.cr7-dot-${instanceId}`);
+
+                        const slides = [
+                            {
+                                title: "Slide 1 / 3 • Hero Hook (Panel 1)",
+                                html: `
+                                    <div class="flex flex-col sm:flex-row items-center gap-5 w-full justify-between px-2">
+                                        <div class="text-center sm:text-left space-y-1.5">
+                                            <h4 class="font-serif text-xl sm:text-2xl font-bold text-[#D4AF37] tracking-wide">CRISTIANO RONALDO</h4>
+                                            <p class="font-serif text-sm sm:text-base tracking-[0.25em] text-[#F3E5AB]">LEGACY</p>
+                                            <p class="font-serif italic text-[#D4AF37]/90 text-sm pt-1">The scent of a legend</p>
+                                        </div>
+                                        <div class="w-28 h-28 sm:w-32 sm:h-32 shrink-0 rounded-2xl overflow-hidden border-2 border-[#D4AF37] shadow-gold-glow bg-black relative">
+                                            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=85" alt="Cristiano Ronaldo Legacy Black & Gold Fragrance Bottle" onerror="this.onerror=null;this.src='https://placehold.co/400x400/0D0D0D/D4AF37?text=CR7+LEGACY';" class="w-full h-full object-cover">
+                                            <span class="absolute bottom-1.5 right-1.5 text-[#D4AF37] text-sm">✦</span>
+                                        </div>
+                                    </div>
+                                `
+                            },
+                            {
+                                title: "Slide 2 / 3 • Brand Pillars (Panel 2)",
+                                html: `
+                                    <div class="flex flex-col sm:flex-row items-center gap-5 w-full justify-center">
+                                        <div class="w-full max-w-xs border border-[#D4AF37]/80 p-4 sm:p-5 rounded-none space-y-3 text-left bg-black">
+                                            <p class="font-serif text-sm sm:text-base text-[#D4AF37] flex items-center gap-2.5"><span>✦</span> <span>Everyday Luxury</span></p>
+                                            <p class="font-serif text-sm sm:text-base text-[#D4AF37] flex items-center gap-2.5"><span>✦</span> <span>Built For Ambition</span></p>
+                                            <p class="font-serif text-sm sm:text-base text-[#D4AF37] flex items-center gap-2.5"><span>✦</span> <span>A Gift To Remember</span></p>
+                                        </div>
+                                        <div class="w-24 h-28 rounded-xl overflow-hidden border border-[#D4AF37]/60 shrink-0">
+                                            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&q=85" alt="Tailored Black Suit & Fragrance" onerror="this.onerror=null;this.src='https://placehold.co/300x400/0D0D0D/D4AF37?text=LEGACY';" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                `
+                            },
+                            {
+                                title: "Slide 3 / 3 • Sensory Close & CTA (Panel 3)",
+                                html: `
+                                    <div class="space-y-4 py-2">
+                                        <p class="font-serif text-base sm:text-lg text-[#D4AF37] max-w-sm leading-relaxed">
+                                            Fresh Citrus, Rich Cedarwood, and Warm Amber.
+                                        </p>
+                                        <p class="text-xs uppercase tracking-[0.22em] text-[#D4AF37] font-bold">CLAIM YOUR LEGACY!</p>
+                                        <div class="pt-1">
+                                            <span class="inline-flex items-center gap-3 font-serif font-bold text-base sm:text-lg text-[#D4AF37]">
+                                                <span>Shop Now</span>
+                                                <i class="fa-solid fa-arrow-right text-[#D4AF37]"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                `
+                            }
+                        ];
+
+                        function renderSlide() {
+                            label.textContent = slides[slideIdx].title;
+                            stage.innerHTML = slides[slideIdx].html;
+                            dots.forEach((d, i) => {
+                                d.className = `cr7-dot-${instanceId} h-2 rounded-full transition-all ${i === slideIdx ? 'w-6 bg-[#D4AF37]' : 'w-2 bg-white/25 hover:bg-gold/60'}`;
+                            });
+                        }
+
+                        const nextSlide = () => { slideIdx = (slideIdx + 1) % slides.length; renderSlide(); };
+                        const prevSlide = () => { slideIdx = (slideIdx - 1 + slides.length) % slides.length; renderSlide(); };
+
+                        renderSlide();
+                        nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextSlide(); });
+                        prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevSlide(); });
+                        stage.addEventListener('click', (e) => { e.stopPropagation(); nextSlide(); });
+                        dots.forEach(dot => {
+                            dot.addEventListener('click', (e) => {
+                                e.stopPropagation();
+                                slideIdx = Number(dot.getAttribute('data-slide'));
+                                renderSlide();
+                            });
+                        });
+                        attachSwipeListener(stage, nextSlide, prevSlide);
+                    }
+                },
+                {
+                    id: 4,
+                    title: "Addis Luxury Watch Store — Campaign Poster",
+                    category: "Branding & Design",
+                    badge: "Your Canva PDF • Addis luxury watch store.pdf",
+                    touchHint: "Toggle Black / Brown leather straps or activate Loupe Dial Zoom",
+                    shortDesc: "Your rectangular gold timepiece campaign ('Addis luxury watch store.pdf') featuring Roman numerals, blue hands, and black/brown leather straps.",
+                    overview: "Crafted for Addis Luxury Watch Store ('Copy of Addis luxury watch store.pdf'), this 3-page promotional campaign pairs timeless rectangular horological elegance with high-contrast obsidian and metallic gold art direction. Designed to showcase a classic rectangular gold watch with a rich black and brown leather strap.",
+                    tools: ["Canva Luxury Art Direction", "Addis luxury watch store.pdf", "Interactive Strap Switcher", "ADDISLUXURYWATCH.COM/RGNL"],
+                    highlights: [
+                        "Hero headline & product storytelling: 'DISCOVER OUR NEW RECTANGULAR GOLD WATCH — IT FEATURES A CLASSIC GEOMETRIC SHAPE PAIRED WITH A RICH BLACK AND BROWN LEATHER STRAP.'",
+                        "Faithfully recreates the rectangular gold case, Roman numeral dial (XI XII I), blue steel hands, and sapphire-style crown.",
+                        "Direct-response store callout ('AVAILABLE NOW IN STORE — ADDISLUXURYWATCH.COM/RGNL')."
+                    ],
+                    renderInteractiveWidget: (instanceId) => `
+                        <div class="w-full select-none bg-black p-4 sm:p-6 border-b border-gold/20">
+                            <!-- Interactive Controls -->
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                                <div class="flex items-center gap-1.5">
+                                    <button type="button" id="watch-black-${instanceId}" class="px-2.5 py-1 rounded-full text-[10px] font-semibold gold-gradient-bg text-white">Black Strap</button>
+                                    <button type="button" id="watch-brown-${instanceId}" class="px-2.5 py-1 rounded-full text-[10px] font-medium bg-charcoal text-ivory/80 border border-gold/25 hover:border-gold">Brown Strap</button>
+                                </div>
+                                <button type="button" id="watch-loupe-${instanceId}" class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-obsidian border border-gold/40 text-gold-light hover:bg-gold/15 transition-colors flex items-center gap-1">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    <span id="watch-loupe-text-${instanceId}">Loupe Zoom</span>
+                                </button>
+                            </div>
+
+                            <!-- Watch & Copy Stage (Matches your PDF layout) -->
+                            <div class="flex items-center justify-between gap-4 sm:gap-6">
+                                <div class="w-28 sm:w-32 h-44 shrink-0 flex flex-col items-center justify-center bg-black rounded-2xl border border-[#D4AF37]/40 p-2 overflow-hidden relative">
+                                    <div id="watch-model-${instanceId}" class="flex flex-col items-center justify-center transition-transform duration-300">
+                                        <!-- Top Alligator Leather Strap -->
+                                        <div id="strap-top-${instanceId}" class="w-10 h-9 bg-neutral-900 border-x border-neutral-700 rounded-t transition-colors duration-300"></div>
+                                        <!-- Rectangular Gold Case -->
+                                        <div class="w-16 h-22 py-1.5 px-1.5 rounded-md border-[3px] border-[#D4AF37] bg-[#f5ecd2] shadow-lg flex flex-col items-center justify-between relative">
+                                            <div class="w-full flex justify-between text-[7px] font-serif font-bold text-black">
+                                                <span>XI</span><span>XII</span><span>I</span>
+                                            </div>
+                                            <div class="w-10 h-11 border border-black/45 flex flex-col items-center justify-center relative my-0.5">
+                                                <span class="text-[5px] font-serif font-bold tracking-[0.15em] text-black mb-2">ADDIS</span>
+                                                <div class="w-3.5 h-0.5 bg-blue-900 absolute top-1/2 left-1/2 -translate-x-full -rotate-45 origin-right"></div>
+                                                <div class="w-4 h-0.5 bg-blue-900 absolute top-1/2 left-1/2 -rotate-12 origin-left"></div>
+                                                <div class="w-1 h-1 rounded-full bg-blue-900 z-10"></div>
+                                            </div>
+                                            <div class="w-full flex justify-between text-[7px] font-serif font-bold text-black">
+                                                <span>VII</span><span>VI</span><span>V</span>
+                                            </div>
+                                            <div class="w-1.5 h-3 bg-[#D4AF37] rounded-r-full absolute -right-2 top-1/2 -translate-y-1/2 flex items-center justify-end">
+                                                <span class="w-1 h-1.5 rounded-full bg-blue-800"></span>
+                                            </div>
+                                        </div>
+                                        <!-- Bottom Alligator Leather Strap -->
+                                        <div id="strap-bot-${instanceId}" class="w-10 h-9 bg-neutral-900 border-x border-neutral-700 rounded-b transition-colors duration-300"></div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-1 text-left space-y-2">
+                                    <p class="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">ADDIS LUXURY WATCH STORE</p>
+                                    <h4 class="font-serif text-sm sm:text-base font-bold text-white leading-snug">
+                                        DISCOVER OUR NEW RECTANGULAR GOLD WATCH
+                                    </h4>
+                                    <p class="text-[11px] sm:text-xs text-white/85 leading-relaxed">
+                                        IT FEATURES A CLASSIC GEOMETRIC SHAPE PAIRED WITH A RICH <span id="strap-copy-${instanceId}" class="text-[#D4AF37] font-bold">BLACK</span> AND BROWN LEATHER STRAP.
+                                    </p>
+                                    <div class="pt-1">
+                                        <span class="block text-[10px] tracking-widest uppercase text-[#D4AF37] font-bold">AVAILABLE NOW IN STORE</span>
+                                        <span class="text-[10px] font-mono text-white/75">ADDISLUXURYWATCH.COM/RGNL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `,
+                    initWidget: (instanceId) => {
+                        let zoomed = false;
+                        const blackBtn = document.getElementById(`watch-black-${instanceId}`);
+                        const brownBtn = document.getElementById(`watch-brown-${instanceId}`);
+                        const loupeBtn = document.getElementById(`watch-loupe-${instanceId}`);
+                        const loupeText = document.getElementById(`watch-loupe-text-${instanceId}`);
+                        const watchModel = document.getElementById(`watch-model-${instanceId}`);
+                        const strapTop = document.getElementById(`strap-top-${instanceId}`);
+                        const strapBot = document.getElementById(`strap-bot-${instanceId}`);
+                        const strapCopy = document.getElementById(`strap-copy-${instanceId}`);
+
+                        blackBtn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            strapTop.className = "w-10 h-9 bg-neutral-900 border-x border-neutral-700 rounded-t transition-colors duration-300";
+                            strapBot.className = "w-10 h-9 bg-neutral-900 border-x border-neutral-700 rounded-b transition-colors duration-300";
+                            strapCopy.textContent = "BLACK";
+                            blackBtn.className = "px-2.5 py-1 rounded-full text-[10px] font-semibold gold-gradient-bg text-white";
+                            brownBtn.className = "px-2.5 py-1 rounded-full text-[10px] font-medium bg-charcoal text-ivory/80 border border-gold/25 hover:border-gold";
+                        });
+
+                        brownBtn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            strapTop.className = "w-10 h-9 bg-[#5c3317] border-x border-[#8b5a2b] rounded-t transition-colors duration-300";
+                            strapBot.className = "w-10 h-9 bg-[#5c3317] border-x border-[#8b5a2b] rounded-b transition-colors duration-300";
+                            strapCopy.textContent = "BROWN";
+                            brownBtn.className = "px-2.5 py-1 rounded-full text-[10px] font-semibold gold-gradient-bg text-white";
+                            blackBtn.className = "px-2.5 py-1 rounded-full text-[10px] font-medium bg-charcoal text-ivory/80 border border-gold/25 hover:border-gold";
+                        });
+
+                        loupeBtn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            zoomed = !zoomed;
+                            watchModel.style.transform = zoomed ? 'scale(1.42)' : 'scale(1)';
+                            loupeText.textContent = zoomed ? 'Reset Zoom' : 'Loupe Zoom';
+                        });
+                    }
+                },
+                {
+                    id: 5,
+                    title: "Zemen Gebeya — Airbuds Pro Social Promo",
+                    category: "Digital Marketing",
+                    badge: "Your Canva Feed Ad • Zemen Gebeya for feed.png",
+                    touchHint: "Tap 'Toggle Deal Tag' to switch between Amharic pricing & savings breakdown",
+                    shortDesc: "Your social media feed promo ('Zemen Gebeya for feed.png') featuring 'Where Ethiopia Shops Digitally', Airbuds Pro, Amharic promo copy & Telebirr.",
+                    overview: "Designed for Ethiopian e-commerce platform Zemen Gebeya ('ዘመን GEBEYA — Where Ethiopia Shops Digitally'), this promotional feed creative ('Zemen Gebeya for feed.png') drives urgency for Airbuds Pro using localized Amharic discount hooks ('በ 999 ብር ብቻ!' & 'የጥቂት ቀናት ታላቅ ቅናሽ!') and co-branding with Ethio Telecom and Telebirr.",
+                    tools: ["Canva Social Ad Design", "Zemen Gebeya for feed.png", "Amharic/English Copy", "Ethio Telecom & Telebirr"],
+                    highlights: [
+                        "Crafted high-urgency Amharic promotional copy: 'በ 999 ብር ብቻ!' (Only 999 Birr! down from 1500) and 'የጥቂት ቀናት ታላቅ ቅናሽ!' (Limited-days mega discount!).",
+                        "Deep forest green (#0D3321) and gold contrast engineered to stand out in Instagram and Facebook feeds.",
+                        "Built instant checkout trust by integrating 'POWERED BY ethio telecom & telebirr' payment badges."
+                    ],
+                    renderInteractiveWidget: (instanceId) => `
+                        <div class="w-full select-none bg-[#0D3321] p-4 sm:p-6 border-b border-gold/20 space-y-4">
+                            <!-- Brand Header (Matches Zemen Gebeya for feed.png) -->
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-[#D4AF37]"></span>
+                                        <span class="font-extrabold text-sm text-white tracking-tight">ዘመን <span class="text-[#D4AF37]">GEBEYA</span></span>
+                                    </div>
+                                    <p class="text-[9px] text-white/80 italic">Where Ethiopia Shops Digitally</p>
+                                </div>
+                                <span class="font-serif text-sm sm:text-base font-bold text-[#D4AF37] tracking-wider">AIRBUDS PRO</span>
+                            </div>
+
+                            <!-- Interactive Price Anchor & Earbuds Stage -->
+                            <div class="flex items-center justify-around py-3 bg-[#092618] rounded-2xl border border-[#D4AF37]/40 px-4 gap-3">
+                                <div class="text-left space-y-1">
+                                    <span class="text-sm text-white/75 line-through block font-serif">1500</span>
+                                    <div id="zemen-price-${instanceId}" class="text-xl sm:text-2xl font-extrabold text-[#D4AF37]">
+                                        በ 999 ብር ብቻ!
+                                    </div>
+                                    <button type="button" id="zemen-toggle-${instanceId}" class="mt-1 px-3 py-1 rounded-full bg-black/50 border border-[#D4AF37]/60 text-[11px] font-semibold text-[#F3E5AB] hover:bg-[#D4AF37] hover:text-black transition-colors">
+                                        Toggle Deal Tag
+                                    </button>
+                                </div>
+
+                                <!-- Matte Black Airbuds Pro Product Visual -->
+                                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border border-[#D4AF37]/50 shadow-xl bg-black shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=500&q=85" alt="Airbuds Pro Matte Black" onerror="this.onerror=null;this.src='https://placehold.co/400x400/082d1b/D4AF37?text=AIRBUDS+PRO';" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+
+                            <!-- Amharic Urgency Banner & Telebirr Bar -->
+                            <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+                                <span class="text-xs sm:text-sm font-bold text-white">የጥቂት ቀናት ታላቅ ቅናሽ!</span>
+                                <div class="flex items-center gap-2 text-[10px]">
+                                    <span class="text-white/70 uppercase">POWERED BY</span>
+                                    <span class="px-2 py-0.5 rounded bg-emerald-950 border border-lime-400/40 text-lime-300 font-semibold">ethio telecom</span>
+                                    <span class="px-2 py-0.5 rounded bg-sky-950 border border-sky-400/40 text-sky-300 font-semibold">telebirr</span>
+                                </div>
+                            </div>
+                        </div>
+                    `,
+                    initWidget: (instanceId) => {
+                        let showSavings = false;
+                        const priceEl = document.getElementById(`zemen-price-${instanceId}`);
+                        const toggleBtn = document.getElementById(`zemen-toggle-${instanceId}`);
+
+                        toggleBtn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            showSavings = !showSavings;
+                            priceEl.textContent = showSavings ? 'Save 501 ETB (33% OFF)' : 'በ 999 ብር ብቻ!';
+                        });
+                    }
+                },
+                {
+                    id: 6,
+                    title: "AfriMarketing AI — AI Copywriting SaaS Prototype",
+                    category: "AI & Tech",
+                    badge: "UN ECA Innovation Café (Oct 2026)",
+                    touchHint: "Tap 'Generate Sample Campaign' to test localized AI copy output",
+                    shortDesc: "Python & Streamlit SaaS prototype built for the UN ECA Innovation Café to generate localized social copy for African SMEs.",
+                    overview: "AfriMarketing AI was engineered to empower African small businesses, founders, and local shop owners with instant, market-aware marketing copy. Showcased at the United Nations Economic Commission for Africa (UN ECA) Innovation Café in October 2026, the Python & Streamlit application understands regional cultural context and platform nuances across Instagram, TikTok, and LinkedIn.",
+                    tools: ["Python", "Streamlit", "Generative AI / LLMs", "Prompt Engineering", "African SME Localization"],
+                    highlights: [
+                        "Selected and showcased as a live prototype at the UN ECA Innovation Café (October 2026) in Addis Ababa.",
+                        "Reduces social media campaign drafting time for African small businesses by over 75%.",
+                        "Built-in regional tone presets tailored for East African & pan-African consumer audiences."
+                    ],
+                    renderInteractiveWidget: (instanceId) => `
+                        <div class="w-full select-none bg-gradient-to-br from-[#0f172a] via-[#131822] to-obsidian p-4 sm:p-6 border-b border-gold/20 space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-gold/15 text-gold border border-gold/30">UN ECA Innovation Café</span>
+                                <button type="button" id="afri-gen-${instanceId}" class="px-3 py-1 rounded-full gold-gradient-bg text-obsidian text-[10px] font-bold hover:shadow-gold-glow transition-all">
+                                    Generate Sample Copy ↻
+                                </button>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-black/70 border border-white/10 font-mono text-[11px] space-y-2">
+                                <div id="afri-prompt-${instanceId}" class="text-gold">$ Brand: Addis Specialty Coffee • Channel: TikTok</div>
+                                <div id="afri-output-${instanceId}" class="font-sans text-xs text-ivory/90 leading-relaxed">
+                                    "From Yirgacheffe highlands straight to your morning ritual ☕✨ Experience single-origin Ethiopian roast crafted for bold thinkers."
+                                </div>
+                            </div>
+                        </div>
+                    `,
+                    initWidget: (instanceId) => {
+                        let idx = 0;
+                        const samples = [
+                            {
+                                prompt: "$ Brand: Addis Specialty Coffee • Channel: TikTok",
+                                output: "\"From Yirgacheffe highlands straight to your morning ritual ☕✨ Experience single-origin Ethiopian roast crafted for bold thinkers.\""
+                            },
+                            {
+                                prompt: "$ Brand: Habesha Fashion Studio • Channel: Instagram",
+                                output: "\"Handwoven Ethiopian artistry reimagined for the modern skyline. Discover our limited Bole collection—crafted in Addis Ababa.\""
+                            },
+                            {
+                                prompt: "$ Brand: FinTech Pay Addis • Channel: LinkedIn",
+                                output: "\"Empowering Ethiopian SMEs with instant mobile checkout. Scale your storefront across Addis Ababa in under 5 minutes.\""
+                            }
+                        ];
+                        const btn = document.getElementById(`afri-gen-${instanceId}`);
+                        const promptEl = document.getElementById(`afri-prompt-${instanceId}`);
+                        const outputEl = document.getElementById(`afri-output-${instanceId}`);
+
+                        btn.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            idx = (idx + 1) % samples.length;
+                            promptEl.textContent = samples[idx].prompt;
+                            outputEl.textContent = samples[idx].output;
+                        });
+                    }
+                },
+                {
+                    id: 7,
+                    title: "EthioTender & Business Telegram Bot",
+                    category: "AI & Tech",
+                    badge: "Python & Google GenAI SDK",
+                    touchHint: "Tap a Telegram command chip to preview live GenAI tender summaries",
+                    shortDesc: "Automated Python & Google GenAI SDK Telegram assistant streamlining local Ethiopian tender discovery and business Q&A.",
+                    overview: "Tracking relevant public and private tenders in Ethiopia is often manual and fragmented. Built with Python and the Google GenAI SDK, this custom Telegram bot automates tender filtering, summarizes complex procurement notices into actionable executive briefs, and answers local business inquiries right inside Telegram.",
+                    tools: ["Python", "Google GenAI SDK", "Telegram Bot API", "AI Summarization", "Workflow Automation"],
+                    highlights: [
+                        "Powered by Python and the Google GenAI SDK for fast, accurate summarization of Ethiopian tender documents.",
+                        "Deployed directly on Telegram—Ethiopia’s #1 business messaging platform—for zero-friction daily usage.",
+                        "Supports keyword alerts and instant Q&A for entrepreneurs and SMEs."
+                    ],
+                    renderInteractiveWidget: (instanceId) => `
+                        <div class="w-full select-none bg-gradient-to-br from-[#0b1f2e] via-[#101923] to-obsidian p-4 sm:p-6 border-b border-gold/20 space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-sky-500/15 text-sky-300 border border-sky-400/30">
+                                    <i class="fa-brands fa-telegram mr-1"></i> Telegram AI Assistant
+                                </span>
+                                <div class="flex gap-1.5">
+                                    <button type="button" id="bot-cmd1-${instanceId}" class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold gold-gradient-bg text-obsidian">/tenders</button>
+                                    <button type="button" id="bot-cmd2-${instanceId}" class="px-2.5 py-0.5 rounded-full text-[10px] font-medium bg-charcoal text-ivory/80 border border-gold/25">/summarize</button>
+                                </div>
+                            </div>
+                            <div class="space-y-2 text-[11px]">
+                                <div id="bot-user-${instanceId}" class="ml-auto max-w-[82%] px-3 py-1.5 rounded-2xl rounded-br-sm bg-gold/20 border border-gold/35 text-ivory">
+                                    /tenders IT &amp; Digital Marketing Addis
+                                </div>
+                                <div id="bot-reply-${instanceId}" class="max-w-[92%] px-3 py-2 rounded-2xl rounded-bl-sm bg-black/75 border border-white/10 text-ivory/85 leading-relaxed">
+                                    <span class="text-gold font-semibold">EthioTender AI:</span> Found 3 active bids in Addis Ababa closing this week. Tap <span class="text-sky-300">/summarize</span> for AI brief.
+                                </div>
+                            </div>
+                        </div>
+                    `,
+                    initWidget: (instanceId) => {
+                        const cmd1 = document.getElementById(`bot-cmd1-${instanceId}`);
+                        const cmd2 = document.getElementById(`bot-cmd2-${instanceId}`);
+                        const userEl = document.getElementById(`bot-user-${instanceId}`);
+                        const replyEl = document.getElementById(`bot-reply-${instanceId}`);
+
+                        cmd1.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            userEl.textContent = "/tenders IT & Digital Marketing Addis";
+                            replyEl.innerHTML = '<span class="text-gold font-semibold">EthioTender AI:</span> Found 3 active bids in Addis Ababa closing this week. Tap <span class="text-sky-300">/summarize</span> for AI brief.';
+                            cmd1.className = "px-2.5 py-0.5 rounded-full text-[10px] font-semibold gold-gradient-bg text-obsidian";
+                            cmd2.className = "px-2.5 py-0.5 rounded-full text-[10px] font-medium bg-charcoal text-ivory/80 border border-gold/25";
+                        });
+
+                        cmd2.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            userEl.textContent = "/summarize Bid #ET-2026-84";
+                            replyEl.innerHTML = '<span class="text-gold font-semibold">AI Executive Brief:</span> Digital Brand Campaign &amp; Portal Redesign • Deadline: Next Friday • Eligibility: Registered Ethiopian SMEs.';
+                            cmd2.className = "px-2.5 py-0.5 rounded-full text-[10px] font-semibold gold-gradient-bg text-obsidian";
+                            cmd1.className = "px-2.5 py-0.5 rounded-full text-[10px] font-medium bg-charcoal text-ivory/80 border border-gold/25";
+                        });
+                    }
+                }
+            ];
+
+            const magazineSoloContainer = document.getElementById('magazine-solo-container');
+            const projectsGrid = document.getElementById('projects-grid');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            // Helper to build a project card element
+            function createProjectCard(project, isSolo = false) {
+                const instanceId = `card-${project.id}`;
+                const card = document.createElement('article');
+                card.className = isSolo
+                    ? "group rounded-3xl bg-charcoal gold-border-subtle gold-border-hover shadow-gold-glow flex flex-col justify-between transition-all duration-300 relative overflow-hidden"
+                    : "group rounded-3xl bg-charcoal gold-border-subtle gold-border-hover flex flex-col justify-between transition-all duration-300 relative overflow-hidden";
+
+                card.innerHTML = `
+                    <div>
+                        <!-- Directly Touchable Interactive Preview Stage -->
+                        ${project.renderInteractiveWidget(instanceId)}
+
+                        <!-- Card Narrative Body -->
+                        <div class="p-6 sm:p-7">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                                <span class="px-3.5 py-1 rounded-full text-xs font-bold tracking-wide bg-obsidian text-gold-light border border-gold/45">
+                                    ${project.category}
+                                </span>
+                                <span class="text-xs text-white/80 font-semibold">
+                                    ${project.badge}
+                                </span>
+                            </div>
+
+                            <h3 class="font-serif text-xl sm:text-2xl font-bold text-white mb-2.5 leading-snug">
+                                ${project.title}
+                            </h3>
+                            <p class="text-white/90 text-sm sm:text-base leading-relaxed mb-3.5">
+                                ${project.shortDesc}
+                            </p>
+                            <p class="text-xs font-semibold text-gold-light flex items-center gap-1.5">
+                                <i class="fa-solid fa-hand-pointer text-xs"></i>
+                                <span>${project.touchHint}</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Tools & Inspect Fullscreen Trigger -->
+                    <div class="px-6 sm:px-7 pb-6 pt-4 border-t border-white/15 flex flex-wrap items-center justify-between gap-3">
+                        <div class="flex flex-wrap gap-1.5">
+                            ${project.tools.slice(0, isSolo ? 4 : 2).map(tool => `
+                                <span class="px-3 py-1 rounded-md text-xs font-medium bg-obsidian text-white/90 border border-gold/30">${tool}</span>
+                            `).join('')}
+                        </div>
+                        <button type="button" class="inspect-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-full gold-gradient-bg text-xs font-bold text-white shadow-gold-glow hover:opacity-95 transition-all">
+                            <i class="fa-solid fa-expand"></i>
+                            <span>Inspect Fullscreen</span>
+                        </button>
+                    </div>
+                `;
+
+                return { card, instanceId };
+            }
+
+            // Render Dedicated Solo Magazine Section (id: 1)
+            function renderSoloMagazine() {
+                if (!magazineSoloContainer) return;
+                magazineSoloContainer.innerHTML = '';
+                const magazineProject = projects.find(p => p.id === 1);
+                if (!magazineProject) return;
+
+                const { card, instanceId } = createProjectCard(magazineProject, true);
+                magazineSoloContainer.appendChild(card);
+
+                if (typeof magazineProject.initWidget === 'function') {
+                    magazineProject.initWidget(instanceId);
+                }
+                card.querySelector('.inspect-btn').addEventListener('click', () => openProjectModal(magazineProject));
+            }
+
+            // 2. Render Touchable Project Cards (All Other Works excluding the solo magazine)
+            function renderProjects(filterCategory = 'all') {
+                projectsGrid.innerHTML = '';
+
+                const otherProjects = projects.filter(p => p.id !== 1);
+                const filtered = filterCategory === 'all'
+                    ? otherProjects
+                    : otherProjects.filter(p => p.category === filterCategory);
+
+                filtered.forEach((project) => {
+                    const { card, instanceId } = createProjectCard(project, false);
+                    projectsGrid.appendChild(card);
+
+                    // Initialize the card's live touch interactions
+                    if (typeof project.initWidget === 'function') {
+                        project.initWidget(instanceId);
+                    }
+
+                    // Bind Inspect Fullscreen button
+                    card.querySelector('.inspect-btn').addEventListener('click', () => openProjectModal(project));
+                });
+            }
+
+            // Initial render
+            renderSoloMagazine();
+            renderProjects('all');
+
+            // 3. Category Filter Click Handling
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => {
+                        b.classList.remove('gold-gradient-bg', 'text-white', 'font-bold', 'shadow-gold-glow');
+                        b.classList.add('bg-charcoal', 'text-white', 'font-semibold', 'border', 'border-gold/40');
+                    });
+
+                    btn.classList.remove('bg-charcoal', 'text-white', 'font-semibold', 'border', 'border-gold/40');
+                    btn.classList.add('gold-gradient-bg', 'text-white', 'font-bold', 'shadow-gold-glow');
+
+                    const selectedCategory = btn.getAttribute('data-filter');
+                    renderProjects(selectedCategory);
+                });
+            });
+
+            // 4. Interactive Rating Widget Logic (1 to 10 Scale)
+            let currentSelectedScore = 10;
+            const scaleBtns = document.querySelectorAll('.scale-btn');
+            const ratingPrompt = document.getElementById('rating-prompt');
+            const submitRatingBtn = document.getElementById('submit-rating-btn');
+            const ratingView = document.getElementById('rating-view');
+            const ratingSuccess = document.getElementById('rating-success');
+            const ratingCountEl = document.getElementById('rating-count');
+            const userCommentEcho = document.getElementById('user-comment-echo');
+            const resetRatingBtn = document.getElementById('reset-rating-btn');
+            const ratingComment = document.getElementById('rating-comment');
+
+            const scoreDescriptions = {
+                1: "1 / 10 • Significant revisions needed across design and usability.",
+                2: "2 / 10 • Basic structure present, but lacks polish and responsiveness.",
+                3: "3 / 10 • Functional layout with minimal interactive features.",
+                4: "4 / 10 • Clean aesthetics, but interactivity requires refinement.",
+                5: "5 / 10 • Average portfolio standard with standard project cards.",
+                6: "6 / 10 • Above average execution and good color harmony.",
+                7: "7 / 10 • Strong branding, tactile previews, and clear storytelling.",
+                8: "8 / 10 • Highly polished, professional typography, and smooth touch controls.",
+                9: "9 / 10 • Exceptional creative direction, seamless Canva & AI integration.",
+                10: "10 / 10 • World-Class Creative & Technical Execution! Masterpiece 🏆"
+            };
+
+            function updateScaleUI(selected) {
+                scaleBtns.forEach(btn => {
+                    const sc = Number(btn.getAttribute('data-score'));
+                    if (sc === selected) {
+                        btn.className = "scale-btn py-2.5 rounded-xl gold-gradient-bg text-obsidian text-xs sm:text-sm font-bold shadow-gold-glow transition-all";
+                    } else {
+                        btn.className = "scale-btn py-2.5 rounded-xl bg-obsidian border border-white/10 text-ivory/70 hover:border-gold hover:text-gold text-xs sm:text-sm font-bold transition-all";
+                    }
+                });
+                ratingPrompt.textContent = `Score Selected: ${selected} / 10 • ${scoreDescriptions[selected]}`;
+            }
+
+            scaleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentSelectedScore = Number(btn.getAttribute('data-score'));
+                    updateScaleUI(currentSelectedScore);
+                });
+            });
+
+            submitRatingBtn.addEventListener('click', () => {
+                const commentVal = ratingComment.value.trim();
+                if (commentVal) {
+                    userCommentEcho.textContent = `"${commentVal}" — Score: ${currentSelectedScore}/10`;
+                } else {
+                    userCommentEcho.textContent = `Assessed at ${currentSelectedScore} / 10 with professional praise!`;
+                }
+                ratingCountEl.textContent = 144;
+                ratingView.classList.add('hidden');
+                ratingSuccess.classList.remove('hidden');
+            });
+
+            resetRatingBtn.addEventListener('click', () => {
+                ratingSuccess.classList.add('hidden');
+                ratingView.classList.remove('hidden');
+                ratingComment.value = '';
+                currentSelectedScore = 10;
+                updateScaleUI(10);
+            });
+
+            // 5. Project Detail Modal Logic with Fullscreen Interactive Stage
+            const modal = document.getElementById('project-modal');
+            const modalBackdrop = document.getElementById('modal-backdrop');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const modalCtaBtn = document.getElementById('modal-cta-btn');
+            const modalInteractiveStage = document.getElementById('modal-interactive-stage');
+
+            function openProjectModal(project) {
+                const modalInstanceId = `modal-${project.id}`;
+                document.getElementById('modal-category').textContent = `${project.category} • ${project.badge}`;
+                document.getElementById('modal-title').textContent = project.title;
+                document.getElementById('modal-overview').textContent = project.overview;
+
+                // Render fullscreen interactive Canva/Tech widget inside modal
+                modalInteractiveStage.innerHTML = project.renderInteractiveWidget(modalInstanceId);
+                if (typeof project.initWidget === 'function') {
+                    project.initWidget(modalInstanceId);
+                }
+
+                const toolsContainer = document.getElementById('modal-tools');
+                toolsContainer.innerHTML = project.tools.map(tool => `
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-medium bg-obsidian border border-gold/30 text-ivory/90">
+                        ${tool}
+                    </span>
+                `).join('');
+
+                const highlightsContainer = document.getElementById('modal-highlights');
+                highlightsContainer.innerHTML = project.highlights.map(item => `
+                    <li class="flex items-start gap-2.5">
+                        <i class="fa-solid fa-star text-gold text-xs mt-1 shrink-0"></i>
+                        <span>${item}</span>
+                    </li>
+                `).join('');
+
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeProjectModal() {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+
+            closeModalBtn.addEventListener('click', closeProjectModal);
+            modalBackdrop.addEventListener('click', closeProjectModal);
+            modalCtaBtn.addEventListener('click', closeProjectModal);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeProjectModal();
+                }
+            });
+
+            // 6. Mobile Navigation Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuIcon.className = isHidden ? 'fa-solid fa-bars text-lg' : 'fa-solid fa-xmark text-lg';
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuIcon.className = 'fa-solid fa-bars text-lg';
+                });
+            });
+
+            // 7. Interactive Contact Form Handling
+            const contactForm = document.getElementById('contact-form');
+            const formConfirmation = document.getElementById('form-confirmation');
+            const confirmationText = document.getElementById('confirmation-text');
+            const resetFormBtn = document.getElementById('reset-form-btn');
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const nameVal = document.getElementById('name').value.trim();
+                const emailVal = document.getElementById('email').value.trim();
+                const topicVal = document.getElementById('topic').value;
+                const messageVal = document.getElementById('message').value.trim();
+
+                // Open direct email compose to meliazoru@gmial.com
+                const subject = encodeURIComponent(`[FAFI Digitals Portfolio] ${topicVal} — from ${nameVal}`);
+                const body = encodeURIComponent(`Name: ${nameVal}\nEmail: ${emailVal}\nTopic: ${topicVal}\n\nMessage:\n${messageVal}`);
+                window.location.href = `mailto:meliazoru@gmial.com?subject=${subject}&body=${body}`;
+
+                confirmationText.innerHTML = `Thank you, <strong class="text-gold">${nameVal}</strong>. Your direct message regarding <strong class="text-ivory">${topicVal}</strong> has been prepared for <strong class="text-gold-light">meliazoru@gmial.com</strong>.`;
+
+                contactForm.classList.add('hidden');
+                formConfirmation.classList.remove('hidden');
+            });
+
+            resetFormBtn.addEventListener('click', () => {
+                contactForm.reset();
+                formConfirmation.classList.add('hidden');
+                contactForm.classList.remove('hidden');
+            });
+
+            // 8. Subtle Scroll Reveal Observer
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+        });
+    </script>
+</body>
+</html>
